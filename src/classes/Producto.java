@@ -1,5 +1,6 @@
 package classes;
 
+import javax.swing.*;
 import java.awt.*;
 import java.io.Externalizable;
 import java.io.IOException;
@@ -11,7 +12,7 @@ public class Producto implements Externalizable {
     private String NombreProducto;
     private String Descripcion;
     private Integer Precio;
-    private Image ImagenMuestra;
+    //private Image ImagenMuestra;
 
     public Producto() {
     }
@@ -24,7 +25,7 @@ public class Producto implements Externalizable {
         out.writeObject(NombreProducto);
         out.writeObject(Descripcion);
         out.writeObject(Precio);
-        out.writeObject(ImagenMuestra);
+        //out.writeObject(ImagenMuestra);
     }
 
     /* NECESARIO PARA QUE SEA EXTERNALIZABLE */
@@ -35,14 +36,14 @@ public class Producto implements Externalizable {
         this.NombreProducto = (String) in.readObject();
         this.Descripcion = (String) in.readObject();
         this.Precio = (Integer) in.readObject();
-        this.ImagenMuestra = (Image) in.readObject();
+        //this.ImagenMuestra = (Image) in.readObject();
     }
 
-    public Producto(String NombreProducto, String Descripcion, Integer Precio, Image ImagenMuestra) {
+    public Producto(String NombreProducto, String Descripcion, Integer Precio) {
         this.NombreProducto = NombreProducto;
         this.Descripcion = Descripcion;
         this.Precio = Precio;
-        this.ImagenMuestra = ImagenMuestra;
+        //this.ImagenMuestra = ImagenMuestra;
     }
 
     public String getNombreProducto() {
@@ -68,7 +69,7 @@ public class Producto implements Externalizable {
     public void setDescripcion(String descripcion) {
         Descripcion = descripcion;
     }
-
+/*
     public Image getImagenMuestra() {
         return ImagenMuestra;
     }
@@ -76,4 +77,5 @@ public class Producto implements Externalizable {
     public void setImagenMuestra(Image imagenMuestra) {
         ImagenMuestra = imagenMuestra;
     }
+    */
 }
