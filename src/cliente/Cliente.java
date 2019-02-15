@@ -5,6 +5,7 @@ import classes.Producto;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
@@ -37,7 +38,7 @@ public class Cliente {
 
             /* CREAMOS UN NUEVO PRODUCTO CON LAS PARAMETROS RESPECTIVOS */
             //Image imagen = new ImageIcon("p1.png").getImage();
-            Producto p = new Producto("Producto 1","Descripcion 1",50);
+            Producto p = new Producto("Producto 1", "Descripcion 1", 50);
 
             /* LO AÑADIMOS A LA LISTA */
             ListaProducto Lista = new ListaProducto();
@@ -48,7 +49,13 @@ public class Cliente {
             objetoSalida.flush();
 
             /* RECIBIMOS EL OBJETO */
+            objetoEntrada = new ObjectInputStream(new FileInputStream("objetos.out"));
             Lista = (ListaProducto) objetoEntrada.readObject();
+            System.out.println("Objeto recibido");
+            for (Producto i : Lista.getLista()) {
+                System.out.println(i.getNombreProducto() + " " + i.getDescripcion() + " " + i.getPrecio());
+            }
+
 
             /*
             Ejemplo:
