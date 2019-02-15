@@ -24,7 +24,7 @@ public class Cliente {
 
         /* REALIZAMOS LAS CONFIGURACIONES DE CONEXIÓN */
         String host = "127.0.0.1";// localhost
-        int port = 9999;
+        int port = 9090;
 
         try {
 

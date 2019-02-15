@@ -22,7 +22,7 @@ public class Servidor {
         try {
 
             /* PUERTO POR EL QUE ESCUCHA */
-            ServerSocket socketServidor = new ServerSocket(9999);
+            ServerSocket socketServidor = new ServerSocket(9090);
             System.out.println("Servidor iniciado...");
 
             while (true) {
