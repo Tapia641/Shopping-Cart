@@ -13,6 +13,7 @@ public class Producto implements Externalizable {
     private String Descripcion;
     private Integer Precio;
     //private Image ImagenMuestra;
+    //private ImageIcon
 
     public Producto() {
     }
