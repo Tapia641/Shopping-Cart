@@ -1,9 +1,10 @@
 package classes;
 
+import java.io.Serializable;
 import java.util.Stack;
 import java.util.Vector;
 
-public class ListaProducto {
+public class ListaProducto  implements Serializable {
 
     private Vector<Producto> Lista;
 
