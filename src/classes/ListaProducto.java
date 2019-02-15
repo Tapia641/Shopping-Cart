@@ -4,6 +4,7 @@ import java.util.Stack;
 import java.util.Vector;
 
 public class ListaProducto {
+
     private Vector<Producto> Lista;
 
     public ListaProducto() {
