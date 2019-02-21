@@ -4,6 +4,7 @@ import classes.ListaProducto;
 import classes.Producto;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
@@ -31,24 +32,9 @@ public class Cliente {
             System.out.println("Conexion establecida...");
 
             /* INICIALIZAMOS LOS OBJETOS DE ENTRADA Y SALIDA */
-            objetoSalida = new ObjectOutputStream(socketCliente.getOutputStream());
             objetoEntrada = new ObjectInputStream(socketCliente.getInputStream());
+            ListaProducto Lista = (ListaProducto) objetoEntrada.readObject();
 
-            /* CREAMOS UN NUEVO PRODUCTO CON LAS PARAMETROS RESPECTIVOS */
-            //Image imagen = new ImageIcon("p1.png").getImage();
-            Producto p = new Producto("Producto 1", "Descripcion 1", 50);
-
-            /* LO AÑADIMOS A LA LISTA */
-            ListaProducto Lista = new ListaProducto();
-            Lista.pushProducto(p);
-
-            /* ESCRIBIMOS UN OBJETO EN EL FLUJO */
-            objetoSalida.writeObject(Lista);
-            objetoSalida.flush();
-
-            /* RECIBIMOS EL OBJETO */
-            objetoEntrada = new ObjectInputStream(new FileInputStream("objetos.out"));
-            Lista = (ListaProducto) objetoEntrada.readObject();
             System.out.println("Objeto recibido");
 
             for (Producto i : Lista.getLista()){
@@ -56,6 +42,19 @@ public class Cliente {
                 System.out.println(i.getDescripcion());
                 System.out.println(i.getPrecio());
             }
+
+            /* CREAMOS UN NUEVO PRODUCTO CON LAS PARAMETROS RESPECTIVOS */
+            //Image imagen = new ImageIcon("p1.png").getImage();
+            Producto p = new Producto("Producto x", "Descripcion x", 100);
+
+            /* LO AÑADIMOS A LA LISTA */
+            Lista.pushProducto(p);
+
+            /* REENVIAMOS EL OBJETO YA ACTUALIZADO */
+            objetoSalida = new ObjectOutputStream(socketCliente.getOutputStream());
+            objetoSalida.writeObject(Lista);
+            objetoSalida.flush();
+            socketCliente.close();
 
         } catch (Exception e) {
             System.err.println(e);
