@@ -1,12 +1,11 @@
 package classes;
 
-import javax.swing.*;
-import java.awt.*;
 import java.io.Externalizable;
 import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
 
+/* NECESITA SER EXTERNALIZABLE PARA QUE LISTA SEA SERIALIZABLE */
 public class Producto implements Externalizable {
 
     private String NombreProducto;

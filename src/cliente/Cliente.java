@@ -3,8 +3,6 @@ package cliente;
 import classes.ListaProducto;
 import classes.Producto;
 
-import javax.swing.*;
-import java.awt.*;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -52,22 +50,13 @@ public class Cliente {
             objetoEntrada = new ObjectInputStream(new FileInputStream("objetos.out"));
             Lista = (ListaProducto) objetoEntrada.readObject();
             System.out.println("Objeto recibido");
-            for (Producto i : Lista.getLista()) {
-                System.out.println(i.getNombreProducto() + " " + i.getDescripcion() + " " + i.getPrecio());
+
+            for (Producto i : Lista.getLista()){
+                System.out.println(i.getNombreProducto());
+                System.out.println(i.getDescripcion());
+                System.out.println(i.getPrecio());
             }
 
-
-            /*
-            Ejemplo:
-             */
-            /* CREAMOS UN NUEVO PRODUCTO PARA RECIBIR EL OBJETO DE TIPO USUARIO
-            System.out.println("Preparado para recibir respuesta");
-            Usuario usuario2 = (Usuario) objetoEntrada.readObject();
-            System.out.println("Objeto recibido... Extrayendo datos");
-            System.out.print("Nombre: " + usuario2.getNombre() + "\nA. paterno: " + usuario2.getApaterno()
-                    + "\nA. materno: " + usuario2.getAmaterno() + "\nPassword: " + usuario2.getPassword() + "\nEdad: "
-                    + usuario2.getEdad() + "\n");
-            */
         } catch (Exception e) {
             System.err.println(e);
         }

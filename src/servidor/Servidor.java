@@ -1,6 +1,7 @@
 package servidor;
 
 import classes.ListaProducto;
+import classes.Producto;
 
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
@@ -40,9 +41,16 @@ public class Servidor {
                 System.out.println("Objeto recibido...");
                 ListaProducto Lista = (ListaProducto) objetoEntrada.readObject();
 
+                for (Producto i : Lista.getLista()){
+                    System.out.println(i.getNombreProducto());
+                    System.out.println(i.getDescripcion());
+                    System.out.println(i.getPrecio());
+                }
+
                 /* LOS GUARDAMOS EN UN .OUT */
                 objetoSalida = new ObjectOutputStream(new FileOutputStream("objetos.out"));
                 objetoSalida.writeObject(Lista);
+                objetoSalida.flush();
 
                 /* REENVIAMOS EL OBJETO*/
                 System.out.println("Devolviendo objeto...");
