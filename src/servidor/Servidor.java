@@ -18,11 +18,12 @@ public class Servidor {
         ObjectOutputStream objetoSalida;
         ObjectInputStream objetoEntrada;
 
-        ListaProducto Lista = new ListaProducto();
+        ListaProducto Lista;
 
         try {
             String filename = "objetos.out";
             ListaProducto person = new ListaProducto();
+            /* INICIALIZAR LA LISTA CON PRODUCTOS VACIOS */
             ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(filename));
             out.writeObject(person);
             out.close();
@@ -49,8 +50,6 @@ public class Servidor {
 
                 /* RECIBIMOS INFORMACION DEL CLIENTE */
                 System.out.println("Cliente conectado desde " + socketCliente.getInetAddress() + " : " + socketCliente.getPort());
-
-
 
                 /* ENVIAMOS EL OBJETO */
                 objetoSalida = new ObjectOutputStream(socketCliente.getOutputStream());

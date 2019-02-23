@@ -1,5 +1,6 @@
 package classes;
 
+import javax.swing.*;
 import java.io.Externalizable;
 import java.io.IOException;
 import java.io.ObjectInput;
@@ -11,8 +12,7 @@ public class Producto implements Externalizable {
     private String NombreProducto;
     private String Descripcion;
     private Integer Precio;
-    //private Image ImagenMuestra;
-    //private ImageIcon
+    private ImageIcon ImagenMuestra;
 
     public Producto() {
     }
@@ -25,7 +25,7 @@ public class Producto implements Externalizable {
         out.writeObject(NombreProducto);
         out.writeObject(Descripcion);
         out.writeObject(Precio);
-        //out.writeObject(ImagenMuestra);
+        out.writeObject(ImagenMuestra);
     }
 
     /* NECESARIO PARA QUE SEA EXTERNALIZABLE */
@@ -36,14 +36,14 @@ public class Producto implements Externalizable {
         this.NombreProducto = (String) in.readObject();
         this.Descripcion = (String) in.readObject();
         this.Precio = (Integer) in.readObject();
-        //this.ImagenMuestra = (Image) in.readObject();
+        this.ImagenMuestra = (ImageIcon) in.readObject();
     }
 
-    public Producto(String NombreProducto, String Descripcion, Integer Precio) {
+    public Producto(String NombreProducto, String Descripcion, Integer Precio, ImageIcon ImagenMuestra) {
         this.NombreProducto = NombreProducto;
         this.Descripcion = Descripcion;
         this.Precio = Precio;
-        //this.ImagenMuestra = ImagenMuestra;
+        this.ImagenMuestra = ImagenMuestra;
     }
 
     public String getNombreProducto() {
@@ -69,13 +69,12 @@ public class Producto implements Externalizable {
     public void setDescripcion(String descripcion) {
         Descripcion = descripcion;
     }
-/*
-    public Image getImagenMuestra() {
+
+    public ImageIcon getImagenMuestra() {
         return ImagenMuestra;
     }
 
-    public void setImagenMuestra(Image imagenMuestra) {
-        ImagenMuestra = imagenMuestra;
+    public void setImagenMuestra(ImageIcon imagenMuestra) {
+        this.ImagenMuestra = imagenMuestra;
     }
-    */
 }

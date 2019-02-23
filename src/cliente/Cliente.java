@@ -3,10 +3,8 @@ package cliente;
 import classes.ListaProducto;
 import classes.Producto;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import javax.swing.*;
+import java.io.*;
 import java.net.Socket;
 
 public class Cliente {
@@ -36,7 +34,7 @@ public class Cliente {
             ListaProducto Lista = (ListaProducto) objetoEntrada.readObject();
 
             System.out.println("Objeto recibido");
-
+            /* SE TRABAJA EL OBJETO */
             for (Producto i : Lista.getLista()){
                 System.out.println(i.getNombreProducto());
                 System.out.println(i.getDescripcion());
@@ -44,8 +42,9 @@ public class Cliente {
             }
 
             /* CREAMOS UN NUEVO PRODUCTO CON LAS PARAMETROS RESPECTIVOS */
-            //Image imagen = new ImageIcon("p1.png").getImage();
-            Producto p = new Producto("Producto x", "Descripcion x", 100);
+            File ar = new File("src/imgs/Acer.jpg");
+            ImageIcon imagen = new ImageIcon(ar.getAbsolutePath());
+            Producto p = new Producto("Producto x", "Descripcion x", 100, imagen);
 
             /* LO AÑADIMOS A LA LISTA */
             Lista.pushProducto(p);
