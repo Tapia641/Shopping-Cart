@@ -42,7 +42,7 @@ public class Cliente {
             }
 
             /* CREAMOS UN NUEVO PRODUCTO CON LAS PARAMETROS RESPECTIVOS */
-            File ar = new File("src/imgs/Acer.jpg");
+            File ar = new File("src/imgs/p1.jpg");
             ImageIcon imagen = new ImageIcon(ar.getAbsolutePath());
             Producto p = new Producto("Producto x", "Descripcion x", 100, imagen);
 
