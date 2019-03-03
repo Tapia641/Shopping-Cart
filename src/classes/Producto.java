@@ -1,6 +1,6 @@
 package classes;
 
-import javax.swing.*;
+import javafx.scene.image.Image;
 import java.io.Externalizable;
 import java.io.IOException;
 import java.io.ObjectInput;
@@ -12,7 +12,7 @@ public class Producto implements Externalizable {
     private String NombreProducto;
     private String Descripcion;
     private Integer Precio;
-    private ImageIcon ImagenMuestra;
+    private Image ImagenMuestra;
 
     public Producto() {
     }
@@ -36,10 +36,10 @@ public class Producto implements Externalizable {
         this.NombreProducto = (String) in.readObject();
         this.Descripcion = (String) in.readObject();
         this.Precio = (Integer) in.readObject();
-        this.ImagenMuestra = (ImageIcon) in.readObject();
+        this.ImagenMuestra = (Image) in.readObject();
     }
 
-    public Producto(String NombreProducto, String Descripcion, Integer Precio, ImageIcon ImagenMuestra) {
+    public Producto(String NombreProducto, String Descripcion, Integer Precio, Image ImagenMuestra) {
         this.NombreProducto = NombreProducto;
         this.Descripcion = Descripcion;
         this.Precio = Precio;
@@ -70,11 +70,11 @@ public class Producto implements Externalizable {
         Descripcion = descripcion;
     }
 
-    public ImageIcon getImagenMuestra() {
+    public Image getImagenMuestra() {
         return ImagenMuestra;
     }
 
-    public void setImagenMuestra(ImageIcon imagenMuestra) {
+    public void setImagenMuestra(Image imagenMuestra) {
         this.ImagenMuestra = imagenMuestra;
     }
 }

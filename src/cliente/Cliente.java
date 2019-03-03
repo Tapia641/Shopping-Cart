@@ -2,8 +2,8 @@ package cliente;
 
 import classes.ListaProducto;
 import classes.Producto;
+import javafx.scene.image.Image;
 
-import javax.swing.*;
 import java.io.*;
 import java.net.Socket;
 
@@ -42,9 +42,12 @@ public class Cliente {
             }
 
             /* CREAMOS UN NUEVO PRODUCTO CON LAS PARAMETROS RESPECTIVOS */
+
             File ar = new File("src/imgs/p1.jpg");
-            ImageIcon imagen = new ImageIcon(ar.getAbsolutePath());
+            Image imagen = new Image(ar.getAbsolutePath());
             Producto p = new Producto("Producto x", "Descripcion x", 100, imagen);
+
+            System.out.println("Se creo el producto correctamente");
 
             /* LO AÑADIMOS A LA LISTA */
             Lista.pushProducto(p);
