@@ -1,4 +1,4 @@
-package classes;
+package Clases;
 
 import java.io.Serializable;
 import java.util.Stack;
@@ -26,5 +26,13 @@ public class ListaProducto  implements Serializable {
 
     public int getTamLista(){
         return Lista.size();
+    }
+    
+    public void UneLista(Vector<Producto> Lista){
+        this.Lista.addAll(Lista);
+    }
+    
+    public void LimpiaLista(){
+        this.Lista.clear();
     }
 }

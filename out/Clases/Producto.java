@@ -1,10 +1,10 @@
-package classes;
+package Clases;
 
-import javafx.scene.image.Image;
 import java.io.Externalizable;
 import java.io.IOException;
 import java.io.ObjectInput;
 import java.io.ObjectOutput;
+import javax.swing.ImageIcon;
 
 /* NECESITA SER EXTERNALIZABLE PARA QUE LISTA SEA SERIALIZABLE */
 public class Producto implements Externalizable {
@@ -12,7 +12,9 @@ public class Producto implements Externalizable {
     private String NombreProducto;
     private String Descripcion;
     private Integer Precio;
-    private Image ImagenMuestra;
+    private ImageIcon ImagenMuestra;
+    private Integer Cantidad;
+    private String Categoria;
 
     public Producto() {
     }
@@ -26,6 +28,8 @@ public class Producto implements Externalizable {
         out.writeObject(Descripcion);
         out.writeObject(Precio);
         out.writeObject(ImagenMuestra);
+        out.writeObject(Cantidad);
+        out.writeObject(Categoria);
     }
 
     /* NECESARIO PARA QUE SEA EXTERNALIZABLE */
@@ -36,14 +40,35 @@ public class Producto implements Externalizable {
         this.NombreProducto = (String) in.readObject();
         this.Descripcion = (String) in.readObject();
         this.Precio = (Integer) in.readObject();
-        this.ImagenMuestra = (Image) in.readObject();
+        this.ImagenMuestra = (ImageIcon) in.readObject();
+        this.Cantidad = (Integer) in.readObject();
+        this.Categoria = (String) in.readObject();
     }
 
-    public Producto(String NombreProducto, String Descripcion, Integer Precio, Image ImagenMuestra) {
+    public Producto(String NombreProducto, String Descripcion, Integer Precio, ImageIcon ImagenMuestra, Integer Cantidad, String Categoria) {
         this.NombreProducto = NombreProducto;
         this.Descripcion = Descripcion;
         this.Precio = Precio;
         this.ImagenMuestra = ImagenMuestra;
+        this.Cantidad = Cantidad;
+        this.Categoria = Categoria;
+    }
+
+    public String getCategoria() {
+        return Categoria;
+    }
+
+    public void setCategoria(String Categoria) {
+        this.Categoria = Categoria;
+    }
+
+    
+    public Integer getCantidad() {
+        return Cantidad;
+    }
+
+    public void setCantidad(Integer Cantidad) {
+        this.Cantidad = Cantidad;
     }
 
     public String getNombreProducto() {
@@ -70,11 +95,11 @@ public class Producto implements Externalizable {
         Descripcion = descripcion;
     }
 
-    public Image getImagenMuestra() {
+    public ImageIcon getImagenMuestra() {
         return ImagenMuestra;
     }
 
-    public void setImagenMuestra(Image imagenMuestra) {
+    public void setImagenMuestra(ImageIcon imagenMuestra) {
         this.ImagenMuestra = imagenMuestra;
     }
 }
