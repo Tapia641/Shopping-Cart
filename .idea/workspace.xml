@@ -1,69 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Carga informacion en el servidor">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mail.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/Clases/ListaPedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/Clases/Pedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Clases/ListaPedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Clases/ListaProducto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Clases/Pedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Clases/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente/Carrito.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente/CarritoControlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente/Cliente.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente/Controlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente/Finalizar.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente/FinalizarControlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente/Producto.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente/ProductoControlador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/antivirus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/carrito.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/laptop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/m1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/m2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/m3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/m4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/m5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/monitor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/p1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/p2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/p3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/p4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/p5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/s2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/s3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/s4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/software.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/tablet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/videojuego.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/AgregarProducto.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/AgregarProducto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/Servidor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/ServidorGUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servidor/ServidorGUI.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Realizando correcciones">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shopping-Cart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping-Cart.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objetos.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/classes/ListaProducto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/classes/Producto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/cliente/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shopping-Cart/cliente/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/cliente/Controlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shopping-Cart/cliente/Controlador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/cliente/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/servidor/Controlador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shopping-Cart/servidor/Servidor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shopping-Cart/servidor/Servidor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ListaProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/Clases/ListaProducto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/Clases/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cliente/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cliente/Controlador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cliente/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servidor/Controlador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servidor/IniciarServidor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servidor/Servidor.java" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,35 +58,7 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Servidor/Servidor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cliente/Controlador.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Cliente/Cliente.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -211,7 +122,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -245,6 +155,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -435,12 +346,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Cliente" />
       <item itemvalue="Application.IniciarServidor" />
-      <item itemvalue="Application.ServidorPrincipal" />
       <item itemvalue="Application.MainServidor" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Servidor (1)" />
+      <item itemvalue="Application.ServidorPrincipal" />
     </list>
     <recent_temporary>
       <list>
@@ -545,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551587662605</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Realizando correcciones">
+      <created>1551832375475</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1551832375475</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -563,14 +481,14 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.20536913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2080537" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32577905" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3045326" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -647,7 +565,8 @@
     <MESSAGE value="Solución a la imagen" />
     <MESSAGE value="Desarrollando interfaz del servidor" />
     <MESSAGE value="Carga informacion en el servidor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Carga informacion en el servidor" />
+    <MESSAGE value="Realizando correcciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Realizando correcciones" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -706,14 +625,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cliente/ClienteGUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cliente/ClienteGUI.fxml" />
     <entry file="file://$PROJECT_DIR$/src/Servidor/MainServidor.java" />
     <entry file="file://$PROJECT_DIR$/src/Servidor/ServidorGUIControlador.java" />
     <entry file="file://$PROJECT_DIR$/src/Servidor/ServidorGUI.fxml" />
@@ -724,9 +636,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Imagenes/AgregarProducto.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Imagenes/AgregarProducto.form" />
     <entry file="file://$PROJECT_DIR$/src/Servidor/ServidorGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -747,16 +657,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servidor/ServidorPrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="124" column="66" selection-start-line="124" selection-start-column="66" selection-end-line="124" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Servidor/ServidorPrincipal.java" />
     <entry file="file://$PROJECT_DIR$/src/Servidor/AgregarProducto.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
@@ -780,10 +681,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cliente/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="170">
+          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Shopping-Cart</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>mail</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
