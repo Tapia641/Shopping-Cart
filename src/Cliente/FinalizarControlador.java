@@ -52,9 +52,9 @@ public class FinalizarControlador implements Initializable {
     
     @FXML
     public void ClickFinalizar(javafx.scene.input.MouseEvent event) {
-	//Pon tu contraseña y correo
+	//Pon tu contrasenia y correo
         Username = "correo";
-        PassWord = "contraseña";
+        PassWord = "contrasenia";
         Mensage += "¡Hola! " + Nombre.getText() + " gracias por comprar con nostros, te estaremos informando sobre tu pedido, con un numero de rastreo ... \n\n\n\n\n\n\n" + Direccion.getText()+ "\n" +  Telefono.getText() ;
         To += Correo.getText();
         Subject += "Detalles de tu compra :)";
