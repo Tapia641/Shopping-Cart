@@ -1,4 +1,4 @@
-/*
+﻿/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -52,8 +52,9 @@ public class FinalizarControlador implements Initializable {
     
     @FXML
     public void ClickFinalizar(javafx.scene.input.MouseEvent event) {
-        Username = "tapia641@gmail.com";
-        PassWord = "luistapiacres";
+	//Pon tu contraseña y correo
+        Username = "correo";
+        PassWord = "contraseña";
         Mensage += "¡Hola! " + Nombre.getText() + " gracias por comprar con nostros, te estaremos informando sobre tu pedido, con un numero de rastreo ... \n\n\n\n\n\n\n" + Direccion.getText()+ "\n" +  Telefono.getText() ;
         To += Correo.getText();
         Subject += "Detalles de tu compra :)";
